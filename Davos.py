@@ -5,18 +5,21 @@ from autenticacao.auth import verify_credentials
 
 make_sidebar()
 
-st.title("Davos")
+col1, col2, col3 = st.columns(3)
 
-st.write("Acesse com seu `usuário` e `senha`.")
+col2.title("Área do Cliente")
 
-username = st.text_input("Usuário")
-password = st.text_input("Senha", type="password")
+col2.write("Acesse com seu `usuário` e `senha`.")
 
-if st.button("Log in", type="primary"):
+username = col2.text_input("Usuário")
+password = col2.text_input("Senha", type="password")
+
+if col2.button("Iniciar", type="primary"):
     if verify_credentials(username, password):
         st.session_state.logged_in = True
-        st.success("Logged in successfully!")
+        col2.success("Seja bem-vindo!")
         sleep(0.5)
         st.switch_page("pages/0_Resumo.py")
+        
     else:
-        st.error("Usuário ou senha incorreta")
+        col2.error("Usuário ou senha incorreta")

@@ -15,15 +15,14 @@ def get_current_page_name():
 
 
 def make_sidebar():
-
     
     with st.sidebar:
+        st.set_page_config(layout="wide")
         st.image('https://davostributos.com.br/wp-content/uploads/2023/08/logo-davos-tributos.png')
         st.write("")
         st.write("")
 
         if st.session_state.get("logged_in", False):
-            st.set_page_config(layout="wide")   
             st.page_link("pages/0_Resumo.py", label="Resumo", icon="📰")
             st.page_link("pages/1_Arquivos.py", label="Arquivos", icon="📁")
             st.page_link("pages/2_Relatórios.py", label="Relatórios", icon="📈")
