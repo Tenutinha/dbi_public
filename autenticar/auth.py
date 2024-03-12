@@ -4,7 +4,7 @@ import json
 import bcrypt
 
 def load_users():
-    with open("autenticacao/usuarios.json", "r") as file:
+    with open("autenticar/usuarios.json", "r") as file:
         users = json.load(file)["users"]
     return users
 
