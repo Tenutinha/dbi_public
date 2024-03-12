@@ -3,7 +3,6 @@ from time import sleep
 from Navegacao import make_sidebar
 from autenticacao.auth import verify_credentials
 
-
 make_sidebar()
 
 st.title("Davos")
