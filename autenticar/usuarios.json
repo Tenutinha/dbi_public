@@ -1,0 +1,12 @@
+{
+  "users": [
+      {
+          "username": "teste",
+          "password": "$2b$12$tvjYRV0Nd/wU80Ewk9QhceQEDW9I2c0a5YL0kS6ccsdqWTaMumlYC"
+      },
+      {
+          "username": "augusto.tenuta",
+          "password": "$2b$12$9YAZjmyhJBJ6cCR/fpQbo.Ow8nn5E4PDfFrbkSfMHdH62dDbHV3VG"
+      }
+  ]
+}

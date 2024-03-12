@@ -1,7 +1,7 @@
 import streamlit as st
 from time import sleep
 from Navegacao import make_sidebar
-from autenticacao.auth import verify_credentials
+from autenticar.auth import verify_credentials
 
 make_sidebar()
 
