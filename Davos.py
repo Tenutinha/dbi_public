@@ -4,12 +4,11 @@ from Navegacao import make_sidebar
 from autenticar.auth import verify_credentials
 
 
-make_sidebar()
+make_sidebar() 
 
 col1, col2, col3 = st.columns(3)
 
 col2.title("Área do Cliente")
-
 col2.write("Acesse com seu `usuário` e `senha`.")
 
 username = col2.text_input("Usuário")
