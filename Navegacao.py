@@ -17,10 +17,8 @@ def get_current_page_name():
 def make_sidebar():
     
     with st.sidebar:
-        st.set_page_config(layout="wide")
+        st.set_page_config(layout="wide",initial_sidebar_state="collapsed")
         st.image('https://davostributos.com.br/wp-content/uploads/2023/08/logo-davos-tributos.png')
-        st.write("")
-        st.write("")
 
         if st.session_state.get("logged_in", False):
             st.page_link("pages/0_Resumo.py", label="Resumo", icon="📰")

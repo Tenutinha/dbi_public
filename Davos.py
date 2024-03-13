@@ -3,6 +3,7 @@ from time import sleep
 from Navegacao import make_sidebar
 from autenticar.auth import verify_credentials
 
+
 make_sidebar()
 
 col1, col2, col3 = st.columns(3)
